@@ -1,0 +1,124 @@
+/* Gambar di tengah dengan flexbox dan border halus */
+.u-image-circle.u-image-1 {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  border: 3px solid #ddd; /* Border halus untuk gambar */
+}
+
+/* Tombol hijau untuk "Detail" */
+.custom-table .btn-info {
+  background-color: #28a745;
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  transition: background-color 0.3s ease; /* Efek halus pada hover */
+  font-size: 8px;
+}
+
+.custom-table .btn-info:hover {
+  background-color: #218838; /* Hijau lebih gelap saat hover */
+}
+
+/* Style Tabel Minimalis */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 12px;
+  text-align: left;
+  color: black;
+}
+
+.custom-table th, .custom-table td {
+  border: 1px solid #ddd;
+  padding: 12px 15px;
+  text-align: center; /* Semua elemen tabel di tengah */
+}
+
+.custom-table th {
+  background-color: #f8f9fa;
+  color: #333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.custom-table td {
+  background-color: #fff;
+  color: black;
+}
+
+.custom-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Wrapper untuk membuat tabel scroll jika terlalu panjang */
+.table-wrapper {
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #ddd; /* Tambahkan border di sekitar tabel */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Tambahkan sedikit shadow */
+  margin-bottom: 30px;
+}
+
+/* Dropdown styling sederhana */
+.filter-select {
+  margin: 20px 0;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  color: #333; /* Warna teks dropdown hitam */
+  background-color: #fff;
+  width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Tombol kembali di tengah */
+.u-btn.u-btn-1 {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #478ac9;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  transition: background-color 0.3s ease; /* Efek hover halus */
+}
+
+.u-btn.u-btn-1:hover {
+  background-color: #357ab7; /* Warna hover lebih gelap */
+}
+
+/* Responsive styling untuk perangkat mobile */
+@media (max-width: 768px) {
+  .custom-table th, .custom-table td {
+      font-size: 8 px;
+      padding: 8px;
+  }
+
+  .filter-select {
+      width: 100%;
+  }
+
+  .u-section-1 .u-sheet-1 {
+      padding: 20px;
+  }
+
+  .table-wrapper {
+      max-height: 300px;
+  }
+}

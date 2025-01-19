@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Pemeriksaan</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/detail.css" media="screen">
+    <script class="u-script" type="text/javascript" src="/static/scripts/detail.js" defer=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Font Awesome for Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* Menggunakan flexbox untuk memusatkan peta secara horizontal dan vertikal */
+        .map-container {
+            display: flex;
+            justify-content: center; /* Center horizontally */
+            align-items: center;     /* Center vertically */
+            height: 100vh;           /* Full height of viewport */
+        }
+
+        /* Peta responsif dengan lebar dan tinggi mengikuti layar */
+        #map {
+            width: 80vw;  /* 80% dari lebar layar */
+            height: 60vh; /* 60% dari tinggi layar */
+            border: 1px solid #ddd;
+        }
+
+        /* Media query untuk perangkat dengan layar kecil (mobile) */
+        @media (max-width: 768px) {
+            #map {
+                width: 90vw;  /* Lebar lebih besar pada layar kecil */
+                height: 50vh; /* Tinggi menyesuaikan layar kecil */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 container-custom">
+        <h2 class="text-center">Detail Pemeriksaan</h2>
+        
+        <!-- Text Output -->
+        <div class="form-group">
+            <textarea id="msg" class="form-control" id="detailTextarea" rows="3" disabled></textarea>
+        </div>
+
+        <!-- Pie Chart -->
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <canvas id="myPieChart"></canvas>
+            </div>
+        </div>
+
+        <!-- Tombol Kembali ke Dashboard -->
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" onclick="goToDashboard()">
+                <i class="fas fa-arrow-left"></i> Kembali ke Dashboard
+            </button>
+        </div>
+
+        <!-- Google Map Embed for Nearby Hospitals and Clinics -->
+        <h4 class="mt-4 text-center">Puskesmas dan Rumah Sakit Terdekat</h4>
+        
+        <!-- Kontainer peta responsif -->
+        <div class="map-container">
+            <div id="map" class="embed-responsive">
+                <iframe class="embed-responsive-item" 
+                        src="https://www.google.com/maps/embed/v1/search?key=AIzaSyDq3oMPRDOX7_85JQNJW-9TprvqbSYxvdA&q=hospital+near+me&zoom=14"
+                        style="border:0; width: 100%; height: 100%;" allowfullscreen="" loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pie Chart Script (Chart.js) -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2"></script>
+
+    <!-- Google Maps Embed -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDq3oMPRDOX7_85JQNJW-9TprvqbSYxvdA&libraries=places&callback=initMap">
+    </script>
+
+    <!-- JavaScript untuk Tombol Kembali ke Dashboard -->
+    <script>
+        function goToDashboard() {
+            window.location.href = '/start';  // Ganti dengan URL dashboard Anda
+        }
+    </script>
+</body>
+</html>

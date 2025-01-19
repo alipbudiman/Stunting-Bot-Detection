@@ -1,0 +1,141 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-image-1 {
+  width: 153px;
+  height: 153px;
+  background-image: url("/static/images/BlackAndWhiteAestheticMinimalistModernSimpleTypographyCoconutCosmeticsLogo4.gif");
+  margin: 61px auto 0;
+}
+
+.u-section-1 .u-custom-html-1 {
+  height: auto;
+  min-height: 200px;
+  width: 541px;
+  margin: 18px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  --radius: 50px;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  background-image: none;
+  text-transform: uppercase;
+  margin: 28px auto 0 470px;
+  padding: 10px 96px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 62px;
+  height: 62px;
+  background-image: none;
+  margin: -57px auto 0 397px;
+  padding: 0;
+}
+
+.u-section-1 .u-text-1 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 18px 369px 60px 414px;
+}
+
+.u-section-1 .u-btn-2 {
+  background-image: none;
+  padding-left: 0;
+  padding-right: 1px;
+  font-size: 1rem;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 698px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 54px;
+    margin-right: 292px;
+    margin-left: auto;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 292px;
+  }
+
+  .u-section-1 .u-text-1 {
+    width: auto;
+    margin-top: 44px;
+    margin-right: 271px;
+    margin-left: 312px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-btn-1 {
+    margin-right: 121px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 224px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 161px;
+    margin-left: 202px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-custom-html-1 {
+    width: 540px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-right: auto;
+    margin-left: 172px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 92px;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-right: 71px;
+    margin-left: 112px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-sheet-1 {
+    min-height: 750px;
+  }
+
+  .u-section-1 .u-image-1 {
+    background-position: 50% 50%;
+  }
+
+  .u-section-1 .u-custom-html-1 {
+    width: 340px;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 98px;
+    margin-right: 0;
+    margin-left: auto;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 0;
+  }
+
+  .u-section-1 .u-text-1 {
+    margin-top: 77px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

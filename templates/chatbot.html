@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Chatbot Stunting</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="/static/css/chatbot.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <meta http-equiv="refresh" content="1800; url =/" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body >
+    <div class="chat-container">
+        <div class="chat-log" id="chatLog">
+            <div class="chat-message bot">
+                <img src="/static/images/5226034.png" alt="Profile Picture" class="profile-pic">
+                <p>Selamat Datang di Layanan ChatBot Stunting Detection. ketik <b>mulai</b> untuk memulai percakapan</p>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput-chat" placeholder="Type your message here" style="visibility: visible;position: relative;">
+            <select id="userInput-6-input" class="rounded-input" style="visibility: hidden;position: absolute;">
+                <option value="" disabled="" selected="">Jawaban</option>
+                <option value="Tidak Yakin">Tidak Yakin</option>
+                <option value="Kurang Yakin">Kurang Yakin</option>
+                <option value="Sedikit Yakin">Sedikit Yakin</option>
+                <option value="Cukup Yakin">Cukup Yakin</option>
+                <option value="Yakin">Yakin</option>
+                <option value="Sangat Yakin">Sangat Yakin</option>
+            </select>
+            <select id="userInput-2-input" class="rounded-input" style="visibility: hidden;position: absolute;">
+                <option value="" disabled="" selected="">Jawaban</option>
+                <option value="Ya">Ya</option>
+                <option value="Tidak">Tidak</option>
+            </select>
+            <button id="sendmessage">Kirim</button>
+        </div>
+    </div>
+
+    <script type="module" src="/static/scripts/chatbot.js"></script>
+    <p style="visibility: hidden;position: absolute;">{{uuid}}</p>
+</body>
+
+</html>

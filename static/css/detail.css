@@ -1,0 +1,30 @@
+body {
+    background-color: #f08080; /* Background Color */
+}
+#map {
+    height: 400px;
+    width: 80%;
+    margin: 0 auto; /* Centering the map */
+}
+.container-custom {
+    width: 80%;
+    margin: 0 auto; /* Centering the content */
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto; /* Centering the iframe */
+}
+.embed-responsive-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    border: 0;
+}

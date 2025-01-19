@@ -1,0 +1,250 @@
+@import 'loading.css';
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f08080;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.chat-container {
+    width: 100%;
+    border: 1px solid #fff;
+    background-color: rgba(17, 17, 17, 0.7);
+    /* Updated background color with opacity */
+    border-radius: 5px;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #56C1E8;
+    padding: 10px;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.chat-header h2 {
+    margin: 0;
+}
+
+.chat-log {
+    flex-grow: 1;
+    /* Allow chat log to grow and fill remaining space */
+    padding: 10px;
+    max-height: calc(100% - 140px);
+    /* Subtract the height of the header and input */
+    overflow-y: auto;
+}
+
+.chat-message {
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+code {
+    background-color: #383838;
+    border: 1px solid #cacaca;
+    color: #ffffff;
+    font-family: "Courier New", monospace;
+    display: block;
+  }
+
+.chat-message.bot {
+    background-color: #9c4e4e;
+    border-radius: 20px;
+    width: 80%;
+    align-self: flex-end;
+}
+
+.chat-message.user {
+    background-color: #b4b4b4;
+    text-align: right;
+    justify-content: right;
+    border-radius: 20px;
+    width: 80%;
+    align-self: flex-start;
+    margin-left: auto;
+}
+
+.chat-input {
+    padding: 10px;
+    background-color: #56C1E8;
+    display: flex;
+    align-items: center;
+    /* Center content vertically */
+}
+
+.chat-input input[type="text"] {
+    flex-grow: 1;
+    /* Allow input field to grow and take available space */
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color:  #000000;
+}
+
+.chat-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.chat-input select {
+    flex-grow: 1;
+    /* Allow input field to grow and take available space */
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    background-color: #ffffff;
+    color:  #000000;
+}
+
+.chat-input button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.chat-message {
+    display: flex;
+    align-items: flex-start;
+}
+
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.redirect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.redirect-button:hover {
+    background-color: #aaa;
+}
+
+.redirect-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.redirect-button:hover {
+    background-color: #aaa;
+}
+
+
+
+.redirect-button {
+    display: inline-block;
+    padding: 5px 40px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: smaller;
+}
+
+.redirect-button:hover {
+    background-color: #aaa;
+}
+
+/* Komputer dan Laptop */
+@media only screen and (min-width: 1200px) {
+    .chat-container {
+        width: 80%;
+    }
+}
+
+/* Tablet */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    .chat-container {
+        width: 80%;
+    }
+}
+
+/* Handphone Besar */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-message.bot {
+
+        width: 90%;
+    }
+
+    .chat-message.user {
+        width: 90%;
+
+    }
+}
+
+/* Handphone Sedang */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-message.bot {
+
+        width: 90%;
+    }
+
+    .chat-message.user {
+        width: 90%;
+
+    }
+}
+
+/* Handphone Kecil */
+@media only screen and (max-width: 319px) {
+    .chat-container {
+        width: 90%;
+    }
+
+    .chat-message.bot {
+
+        width: 90%;
+    }
+
+    .chat-message.user {
+        width: 90%;
+
+    }
+}
+
+
+  

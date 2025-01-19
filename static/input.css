@@ -1,0 +1,86 @@
+ .u-section-1 {
+  background-image: none;
+}
+
+.u-section-1 .u-sheet-1 {
+  min-height: 100vh;
+}
+
+.u-section-1 .u-image-1 {
+  width: 250px;
+  height: 250px;
+  background-image: url("/static/images/BlackAndWhiteAestheticMinimalistModernSimpleTypographyCoconutCosmeticsLogo5.gif");
+  background-position: 50% 50%;
+  margin: 44px auto 0;
+}
+
+.u-section-1 .u-custom-html-1 {
+  height: auto;
+  min-height: 201px;
+  width: 389px;
+  margin: 29px auto 0;
+}
+
+.u-section-1 .u-btn-1 {
+  font-weight: 700;
+  font-size: 1.5rem;
+  --radius: 50px;
+  margin: 50px auto 0 526px;
+}
+
+.u-section-1 .u-icon-1 {
+  width: 58px;
+  height: 58px;
+  background-image: none;
+  margin: -58px auto 60px 445px;
+  padding: 0;
+}
+
+@media (max-width: 1199px) {
+  .u-section-1 .u-btn-1 {
+    margin-top: 43px;
+    margin-left: 426px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 344px;
+  }
+}
+
+@media (max-width: 991px) {
+  .u-section-1 .u-btn-1 {
+    margin-left: 321px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 229px;
+  }
+}
+
+@media (max-width: 767px) {
+  .u-section-1 .u-btn-1 {
+    margin-top: 50px;
+    margin-left: 227px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 143px;
+  }
+}
+
+@media (max-width: 575px) {
+  .u-section-1 .u-custom-html-1 {
+    margin-right: initial;
+    margin-left: initial;
+    width: auto;
+  }
+
+  .u-section-1 .u-btn-1 {
+    margin-top: 34px;
+    margin-left: 123px;
+  }
+
+  .u-section-1 .u-icon-1 {
+    margin-left: 48px;
+  }
+}

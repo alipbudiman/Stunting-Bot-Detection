@@ -1,0 +1,15 @@
+# Python virtual environment
+virtualenv/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Project specific cache directories
+libs/__pycache__/
+libs/certanty_factor/__pycache__/
+libs/config/__pycache__/
+libs/enc/__pycache__/
+libs/handler/__pycache__/
+libs/message/__pycache__/
+libs/security/__pycache__/
